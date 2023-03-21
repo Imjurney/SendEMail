@@ -7,10 +7,10 @@ const mailSender = {
   // 메일발송 함수
   sendTokcMail: function (param) {
     let transporter = nodemailer.createTransport({
-      host: 'gun@gnsis.co.nz',
+      host: 'mail.knccapital.co.nz',
       port: 465,
       auth: {
-        user: 'test@knccapital.co.nz', // 보내는 메일의 주소
+        user: 'gun@gnsis.co.nz', // 보내는 메일의 주소
         pass: process.env.PASSWORD, // 보내는 메일의 비밀번호
       },
     })
